@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "content": "The shortcomings of using a json-server for react demonstrations can be seen almost anywhere.",
+      "author": "typicode",
+      "_commentIds": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": 2,
+      "title": "React Hooks",
+      "content": "Should I be using React Hooks? Everyone says yes, but after more than two years trying, I don't think so. Hooks sacrifice clarity for simplicity. Prop Drilling can be avoided with a proper Redux setup, a good pattern, and simple components.",
+      "author": "typicode",
+      "_commentIds": [
+        1,
+        4
+      ]
+    }
+  ]
+}

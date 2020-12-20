@@ -11,7 +11,28 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .content { width: auto!important; }
+  .content { width: 90%; }
+}
+
+h2 {
+  color: #666;
+}
+
+button.ui.primary.button,
+button.ui.primary.button:focus {
+  background-color: rgb(10, 190, 175);
+}
+
+button.ui.primary.button:hover,
+button.ui.primary.button:visited,
+button.ui.primary.button:active {
+  background-color: teal;
+}
+
+button.ui.primary.button .ui.icon.plus {
+  color: white;
+  margin-left: .5rem;
+  margin-right: -.5rem;
 }
 
 .content.main {
@@ -22,7 +43,7 @@
   display: flex;
   margin-left: auto!important;
   margin-right: auto!important;
-  min-height: calc(95vh - 112px);
+  min-height: calc(95vh - 85px);
   flex-direction: column;
   background-color: transparent;
   color: #555;

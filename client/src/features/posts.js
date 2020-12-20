@@ -20,8 +20,13 @@ export const postsReducer = (state = null, action) => {
 
 export const fetchPosts = () => async dispatch => {
   try {
-    const res = await axios.get(`${serverUrl}`)
+    const res = await axios.get(`${serverUrl}/posts`);
+    dispatch({ type: FETCH_ALL_POSTS, payload: res.data });
   } catch (err) {
     dispatch({ type: POSTS_ERROR, err });
   }
+}
+
+export const clearPosts = () => dispatch => {
+  dispatch({ type: CLEAR_ALL_POSTS, payload: null  });
 }

@@ -4,7 +4,9 @@ import { postDetailsReducer } from './postDetails';
 
 export const serverUrl = 'http://localhost:3333';
 
-export default combineReducers({
+const rootReducer = combineReducers({
   posts: postsReducer,
   postDetails: postDetailsReducer
 });
+
+export default rootReducer;

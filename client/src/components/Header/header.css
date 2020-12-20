@@ -1,11 +1,10 @@
 .header {
-  background-color: rgb(11, 192, 174);
+  background-color: rgb(10, 190, 175);
   padding: 1rem 0;
   color: white;
 }
 
 .header .header-interior {
-  max-width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -29,7 +28,7 @@
 .header ul li {
   display: flex;
   margin: 0 0 0 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -45,9 +44,9 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 481px) {
-  .header-interior { width: auto; }
+  .header-interior { width: 90%; }
 }
 
 @media only screen and (max-width: 480px) {
-  .header-interior { width: auto; height:63px; }
+  .header-interior { width: 90%; }
 }

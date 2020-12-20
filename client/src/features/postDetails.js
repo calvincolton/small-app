@@ -30,3 +30,12 @@ export const fetchPostDetail = (id) => async dispatch => {
     dispatch({ type: POST_DETAILS_ERROR, err });
   }
 }
+
+export const createPost = (props) => async dispatch => {
+  try {
+    const res = await axios.post(`${serverUrl}/posts`, props);
+    dispatch({ type: CREATE_POST, payload: res.data });
+  } catch (err) {
+    dispatch({ type: POST_DETAILS_ERROR, err })
+  }
+}

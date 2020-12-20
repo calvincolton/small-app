@@ -2,11 +2,11 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reduxThunk from 'redux-thunk';
-import reducers from '../features';
+import rootReducer from '../features';
 
-export default ({ children, initialState = {} }) => {
+const Root = ({ children, initialState = {} }) => {
   const store = createStore(
-    reducers,
+    rootReducer,
     initialState,
     applyMiddleware(reduxThunk)
   );
@@ -16,6 +16,8 @@ export default ({ children, initialState = {} }) => {
     </Provider>
   );
 };
+
+export default Root;
 
 // NOTE: this Root file was created so that we can wrap children components when testing,
 // effectively passing the store to each individual component
